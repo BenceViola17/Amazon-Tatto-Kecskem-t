@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Amazon Tattoo | Galéria</title>
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css" />
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/vendor/animate.min.css" />
+    <link rel="stylesheet" href="css/vendor/aos.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/page-polish.css" />
+    <style>
+      :root {
+        --bg: #070707;
+        --bg-soft: #111111;
+        --panel: #161616;
+        --gold: #c4a06a;
+        --gold-soft: #e8d7a7;
+        --text: #f5f1ea;
+        --muted: rgba(245, 241, 234, 0.72);
+        --line: rgba(255, 255, 255, 0.08);
+      }
+      body { background: var(--bg); color: var(--text); }
+      .page-hero {
+        min-height: 480px;
+        background-image: linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.78)), url('https://images.unsplash.com/photo-1552627019-947c3789ffb5?auto=format&fit=crop&w=1600&q=85');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+      }
+      .page-hero h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(3rem, 7vw, 6rem);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin: 0;
+        color: var(--text);
+      }
+      .page-hero p {
+        margin-top: 1rem;
+        color: var(--gold-soft);
+        letter-spacing: 0.18rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+      .page-shell {
+        padding: 90px 0 40px;
+      }
+      .gallery-note {
+        margin: 0 0 28px;
+        color: var(--muted);
+        text-align: center;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+      .gallery-item {
+        display: block;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--panel);
+        box-shadow: 0 18px 38px rgba(0,0,0,0.12);
+      }
+      .gallery-item img {
+        display: block;
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        transition: transform 0.35s ease;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.04);
+      }
+      .gallery-meta {
+        padding: 18px 22px 20px;
+      }
+      .gallery-meta h3 {
+        margin: 0;
+        font-size: 1.6rem;
+        font-family: "Cormorant Garamond", serif;
+        letter-spacing: 0.04em;
+        color: var(--gold-soft);
+      }
+      .gallery-meta p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 0.78rem;
+        letter-spacing: 0.12rem;
+        text-transform: uppercase;
+      }
+      @media (max-width: 991px) {
+        .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      @media (max-width: 575px) {
+        .gallery-grid { grid-template-columns: 1fr; }
+        .page-hero { min-height: 340px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="unslate_co--site-nav site-nav-target page-nav">
+      <div class="container">
+        <div class="row align-items-center justify-content-between text-left">
+          <div class="col-md-5 text-right">
+            <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+              <li><a href="index.html" class="nav-link">Kezdőlap</a></li>
+              <li><a href="galeria.html" class="nav-link">Galéria</a></li>
+              <li><a href="rolam.html" class="nav-link">Rólunk</a></li>
+            </ul>
+          </div>
+          <div class="site-logo pos-absolute">
+            <a href="index.html" class="unslate_co--site-logo">Amazon Tattoo<span>.</span></a>
+          </div>
+          <div class="col-md-5 text-right text-lg-left">
+            <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+              <li><a href="munkatarsam.html" class="nav-link">Csapatunk</a></li>
+              <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <div class="container">
+        <h1>Galéria</h1>
+        <p>Precizitás • Játék • Stílus</p>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <p class="gallery-note">Hangulat- és stílusinspirációként szolgáló stockfotók; nem a szalon saját munkáit mutatják.</p>
+        <div class="gallery-grid">
+          <article class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=900&q=85" alt="Fekete-szürke hát- és kartetoválás" />
+            <div class="gallery-meta">
+              <h3>Black &amp; Grey</h3>
+              <p>Stílusinspiráció</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?auto=format&fit=crop&w=900&q=85" alt="Tetoválás közben, kesztyűs kézzel" />
+            <div class="gallery-meta">
+              <h3>Tetoválás közben</h3>
+              <p>Tetoválás közben</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&crop=entropy&w=900&q=75" alt="Részletgazdag tetoválás" />
+            <div class="gallery-meta">
+              <h3>Részletgazdag munka</h3>
+              <p>Stílusinspiráció</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1597852075234-fd721ac361d3?auto=format&fit=crop&w=900&q=85" alt="Közelkép tetoválás készítéséről" />
+            <div class="gallery-meta">
+              <h3>Munka közben</h3>
+              <p>Részletgazdag vonalak</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1605647533135-51b5906087d0?auto=format&fit=crop&w=900&q=85" alt="Fekete-fehér tetováló stúdiójelenet" />
+            <div class="gallery-meta">
+              <h3>Stúdióhangulat</h3>
+              <p>Fekete-fehér inspiráció</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1583213261205-63258746ed4c?auto=format&fit=crop&w=900&q=85" alt="Tetováló eszközök és tinta sötét háttér előtt" />
+            <div class="gallery-meta">
+              <h3>Eszközök</h3>
+              <p>Precíz munka alapjai</p>
+            </div>
+          </article>
+        </div>
+        <section class="page-cta" aria-label="Időpontfoglalás">
+          <div>
+            <h2>Tervezd meg a következő tetoválásod</h2>
+            <p>Vedd fel velem a kapcsolatot időpont-egyeztetéshez.</p>
+          </div>
+          <a class="tattoo-button" href="kapcsolat.html">Kapcsolati információk</a>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

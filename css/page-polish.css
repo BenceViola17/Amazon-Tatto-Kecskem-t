@@ -1,0 +1,249 @@
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.location-placeholder {
+  display: grid;
+  min-height: 220px;
+  align-content: center;
+  justify-items: center;
+  margin: 0;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #151515;
+  color: rgba(245, 241, 234, 0.74);
+  text-align: center;
+}
+
+.mini-map.location-placeholder {
+  float: none;
+  position: static;
+  width: min(700px, 100%);
+  min-height: 350px;
+  margin: 0 auto 2rem;
+}
+
+.tattoo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 12px 24px;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: #101010 !important;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.13rem;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tattoo-button:hover,
+.tattoo-button:focus-visible {
+  border-color: var(--gold-soft);
+  background: var(--gold-soft);
+  color: #101010 !important;
+  transform: translateY(-2px);
+}
+
+.tattoo-button--outline {
+  background: transparent;
+  color: var(--gold-soft) !important;
+}
+
+.tattoo-button--outline:hover,
+.tattoo-button--outline:focus-visible {
+  background: var(--gold);
+  color: #101010 !important;
+}
+
+.page-nav {
+  position: relative;
+  padding: 18px 0;
+  background: rgba(10, 10, 10, 0.96);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-nav .site-logo.pos-absolute {
+  position: static;
+  transform: none;
+  text-align: center;
+}
+
+.page-nav .site-nav-ul {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.page-nav .site-nav-ul > li > a {
+  color: var(--text);
+}
+
+.page-nav .site-nav-ul > li > a:hover {
+  color: var(--gold-soft);
+}
+
+.page-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 54px;
+  padding: 30px 34px;
+  border: 1px solid var(--line);
+  background: linear-gradient(120deg, #171512, #101010);
+}
+
+.page-cta h2 {
+  margin: 0 0 5px;
+  color: var(--gold-soft);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  letter-spacing: 0.04em;
+}
+
+.page-cta p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.unslate_co--section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about-photo-stack figure {
+  margin-bottom: 16px;
+}
+
+.about-photo-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-photo-thumbnails img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  filter: saturate(0.72);
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.about-photo-thumbnails img:hover {
+  filter: saturate(1);
+  transform: translateY(-3px);
+}
+
+#portfolio-section #posts .portfolio-item {
+  aspect-ratio: 4 / 5;
+  background: var(--panel);
+}
+
+#portfolio-section #posts .portfolio-item > .reveal-wrap,
+#portfolio-section #posts .portfolio-item .reveal-content {
+  height: 100%;
+}
+
+#portfolio-section #posts .portfolio-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .unslate_co--section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .page-nav .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .page-nav .row > [class*="col-"] {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .unslate_co--site-nav:not(.page-nav) .row.align-items-center {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(24px, 3vw, 48px);
+  }
+
+  .unslate_co--site-nav:not(.page-nav) .row.align-items-center > .col-md-5 {
+    width: auto;
+    max-width: none;
+    flex: none;
+  }
+
+  .unslate_co--site-nav:not(.page-nav) .site-logo.pos-absolute {
+    position: static;
+    transform: none;
+    white-space: nowrap;
+  }
+
+  .unslate_co--site-nav:not(.page-nav) .site-nav-ul {
+    display: inline-flex !important;
+    align-items: center;
+    gap: clamp(12px, 1.6vw, 24px);
+    white-space: nowrap;
+  }
+
+  .unslate_co--site-nav:not(.page-nav) .col-md-5:first-child .site-nav-ul {
+    justify-content: flex-end;
+  }
+
+  .unslate_co--site-nav:not(.page-nav) .site-nav-ul > li > a {
+    padding: 10px 0;
+    letter-spacing: 0.08rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .unslate_co--section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-actions,
+  .page-cta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .page-cta {
+    padding: 24px;
+  }
+
+  .tattoo-button {
+    width: 100%;
+  }
+
+  .about-photo-thumbnails {
+    gap: 10px;
+  }
+
+  .about-photo-thumbnails img {
+    height: 170px;
+  }
+}
