@@ -27,6 +27,20 @@
   margin: 0 auto 2rem;
 }
 
+.mini-map {
+  float: none;
+  position: relative;
+  left: auto;
+  width: 100%;
+}
+
+.mini-map iframe {
+  display: block;
+  width: 100%;
+  min-height: 350px;
+  border: 0;
+}
+
 .tattoo-button {
   display: inline-flex;
   align-items: center;
